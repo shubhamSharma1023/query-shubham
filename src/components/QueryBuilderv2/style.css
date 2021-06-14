@@ -1,0 +1,111 @@
+.rb-grid-row {
+  display: grid;
+  grid-row-gap: 5px;
+  grid-template-columns: repeat(4, 30px) auto;
+  grid-template-rows: repeat(4, auto);
+}
+.rb-query {
+  display: flex;
+  height: 35px;
+  flex-direction: row;
+  grid-column: 2 / span 4;
+  justify-items: start;
+  background: #f9f1f2;
+}
+.rb-side-button-div {
+  background-color: #b6dee2;
+  border-radius: 12px;
+  grid-area: 1 / 1 / span 1 / auto;
+  z-index: 1;
+  writing-mode: vertical-lr;
+
+  margin-right: 0px;
+  margin: 0 2px;
+  position: relative;
+  /* text-align: center; */
+}
+.rb-side-grp-button {
+  width: 26px;
+  padding: 3px;
+  height: calc(100% - 26px);
+  background-color: #b6dee2;
+  border-color: #b6dee2;
+  border-width: 0px;
+  display: table-column;
+  border-radius: 12px;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-animation: fadeIn 0.1s ease-in-out;
+  animation: fadeIn 0.1s ease-in-out;
+  -webkit-appearance: button;
+  overflow: visible;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-rendering: auto;
+}
+.rb-side-grp-button:hover {
+  background-color: #d1eaf0;
+  cursor: pointer;
+}
+.rb-side-button:hover {
+  background-color: #d1eaf0;
+  cursor: pointer;
+}
+.rb-side-button {
+  -webkit-writing-mode: vertical-rl !important;
+  writing-mode: vertical-rl !important;
+  text-orientation: mixed;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+  height: 26px;
+  width: 26px;
+  bottom: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+}
+.rb-1.level2 {
+  grid-area: 4 /2 / span 2 / auto;
+}
+.rb-1.level2-1 {
+  grid-area: 6/2 / span 4 / auto;
+}
+.rb-1.level3 {
+  grid-area: 8/3 / span 2 / auto;
+}
+.rb-2.level2 {
+  grid-column: 3 / span 3;
+  justify-items: start;
+}
+.rb-2.level3 {
+  grid-column: 4 / span 2;
+}
+.rb-block {
+  background-color: #fff;
+  padding: 10px;
+  
+}
+.MuiFilledInput-input {
+  padding: 12px 12px 10px !important;
+}
+
+.MuiAutocomplete-root {
+  display: inline-block;
+  margin-right: 10px;
+}
+.MuiSelect-select.MuiSelect-select {
+  padding-right: 24px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+}
+.MuiFilledInput-input {
+  padding: 18px !important;
+}
